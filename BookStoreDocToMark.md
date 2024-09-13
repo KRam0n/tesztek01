@@ -5,6 +5,8 @@
 ### Submitted to Smt. K.B. Parekh College of Computer Science-Mahuva
 (Affiliated to Maharaja Krishnakumarsinhji Bhavnagar University)
 
+![spiral model](https://github.com/KRam0n/tesztek01/blob/main/kepek/cimer.png)
+
 **in partial fulfillment for the award of degree of BACHELOR OF COMPUTER APPLICATIONS**
 
 Submitted by:  
@@ -16,6 +18,8 @@ Guided by:
 Assistant Professor  
 Smt. K.B. Parekh College of Computer Science-Mahuva  
 **March - 2019**
+
+![spiral model](https://github.com/KRam0n/tesztek01/blob/main/kepek/cimer2.png)
 
 ---
 
@@ -355,7 +359,7 @@ The **Spiral Model** diagram represents the cyclical nature of the development p
 
 *(Figure 2: Spiral Model)*
 
-![spiral model](kepek/sipral.png)
+![spiral model](https://github.com/KRam0n/tesztek01/blob/main/kepek/spiral.png)
 
 ### Advantages of the Spiral Model:
 - **Risk Management**: The model emphasizes early identification and mitigation of risks through continuous evaluation.
@@ -402,37 +406,67 @@ The Physical Design is a graphical representation of the system’s internal and
 
 #### Data Flow Diagram (DFD)
 
-- **0 Level DFD**: Represents the website flow.  
-  *(Figure 4: 0 Level Data Flow Diagram)*
+The Data Flow Diagrams (DFD) is a graphical representation of the flow of data through an information system. Data Flow Diagrams are used by systems analysis to design information processing systems but also a way to model whole organization. The main merit of DFD is that it can provide an overview of what data a system would processes. What transformations of data are done, what data are stored and which stored data is used, and where the result is flow.
 
-- **1st Level DFD**: Represents detailed data flow for user interactions.  
-  *(Figure 5: 1st Level Data Flow Diagram)*
+### Standard Symbols used in DFD:
+
+| Symbol           | Name              | Function                                                |
+| --- |-------------------|---------------------------------------------------------|
+| --- | Data Flow         | Used to connect processes to each other. The arrowhead indicates the direction of data flow. |
+| --- | Process           | Represents a transformation of input data into output data. |
+| --- | Input / Output    | Indicates data entering or leaving the system.            |
+
+- **0 Level DFD**: Represents the website flow.
+
+  *(Figure 4: 0 Level Data Flow Diagram)*
+  ![dataflow](https://github.com/KRam0n/tesztek01/blob/main/kepek/dataflow.png)
+
+- **1st Level DFD**: Represents detailed data flow for user interactions.
+
+*(Figure 5: 1st Level Data Flow Diagram)*
+  ![flowchart](https://github.com/KRam0n/tesztek01/blob/main/kepek/flowchart.png)
 
 *(Figure 6: BMS Flowchart Diagram)*
+  ![userflow](https://github.com/KRam0n/tesztek01/blob/main/kepek/userflow.png)
 
 ---
 
 ### Use Case Diagram
 
-Use case diagrams represent the interaction between users and the system. They display the relationship among actors and use cases.
+A use case is a set of scenarios that describing an interaction between a user and a system.  A use case diagram displays the relationship among actors and use cases.  The two main components of a use case diagram are use cases and actors.
 
-- **User Use Case Diagram**  
-  *(Figure 9: User Use Case Diagram)*
 
-- **BMS Use Case Diagram**  
+- **User Use Case Diagram**
+
+*(Figure 9: User Use Case Diagram)*
+  ![usecase](https://github.com/KRam0n/tesztek01/blob/main/kepek/usecase.png)
+
+- **BMS Use Case Diagram**
+
+  An actor is represents a user or another system that will interact with the sys
+
+  Item you are modeling.  A use case is an external view of the system that represents some action the user might perform in order to complete a task.
+  
   *(Figure 10: BMS Use Case Diagram)*
+  ![userusecase](https://github.com/KRam0n/tesztek01/blob/main/kepek/userusecase.png)
 
 ---
 
 ### Activity Diagram
 
-Activity diagrams represent the flow from one activity to another in the system. 
+Activity diagrams represent the flow of activities or operations within a system. Below is a table of the standard symbols used in an activity diagram.
 
-- **User Activity Diagram**  
-  *(Figure 12: User Activity Diagram)*
+| Name of Symbols                      |Simbols| Description                                                                 |
+|--------------------------------------|------------------------------|-----------------------------------------------------------------------------|
+| **Start Symbol**                     |![symbols](https://github.com/KRam0n/tesztek01/blob/main/kepek/start.png)| Represents the beginning of a process or workflow in an activity diagram.    |
+| **Activity Symbol**                  |![symbols](https://github.com/KRam0n/tesztek01/blob/main/kepek/activity.png)| Indicates the activities that make up a modeled process.                    |
+| **Connector Symbol**                 |---|Shows the directional flow or control flow of the activity.                 |
+| **Decision Symbol**                  |![symbols](https://github.com/KRam0n/tesztek01/blob/main/kepek/decision.png)| Represents a decision, always with at least two paths branching out.        |
+| **End Symbol**                       |![symbols](https://github.com/KRam0n/tesztek01/blob/main/kepek/end.png)| Marks the end state of an activity and represents the completion of all flows.|
+| **Joint Symbol/Synchronization Bar** |![symbols](https://github.com/KRam0n/tesztek01/blob/main/kepek/joint.png)| Combines two concurrent activities into a single flow.              |
+| **Fork Symbol**                      |![symbols](https://github.com/KRam0n/tesztek01/blob/main/kepek/fork.png)| Splits a single activity flow into two concurrent activities.               |
 
-- **Login System Activity Diagram**  
-  *(Figure 13: Login System Activity Diagram)*
+*(Figure 11: Activity Diagram Symbols)*
 
 ---
 
@@ -444,6 +478,19 @@ Entity-Relationship (E-R) diagrams represent entities in the system and their re
 ## 3.2 Data Dictionary
 
 The database structure for the system involves several tables. Below is the detailed design for each table used in the system.
+
+##Database Design & Structure Design
+
+Various tables used in the System are as follows:
+
+- Admin
+- Book
+- Category
+- Contact
+- Register
+- Order
+
+Detail of all the tables with its all the fields are as below:
 
 ### Table Name: Admin
 - **Primary Key**: `a_id`
@@ -539,12 +586,16 @@ The input/output design of the **Bookstore Management System** includes various 
 ### Home Page
 Home page for BMS without logged-in users.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/homepage.png)
+
 *(Figure 16: BMS Home Page)*
 
 ---
 
 ### Selected Category
 When a user selects a category (e.g., Detective), the system shows books within that category.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/selectedcategory.png)
 
 *(Figure 17: BMS Selected Category)*
 
@@ -553,12 +604,16 @@ When a user selects a category (e.g., Detective), the system shows books within 
 ### Book Details (Before Login)
 Book details page for visitors (users who have not logged in). Visitors are unable to add books to the cart.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/bookdetails.png)
+
 *(Figure 18: BMS Book Details)*
 
 ---
 
 ### Visitor Login Page
 Login page for visitors.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/loginuser.png)
 
 *(Figure 19: BMS Login Page)*
 
@@ -567,12 +622,16 @@ Login page for visitors.
 ### Register Page
 Registration page for new users.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/userregistration.png)
+
 *(Figure 20: BMS Register Page)*
 
 ---
 
 ### Contact Us Page
 Contact Us page allows users to send messages or queries to the admin.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/contactus.png)
 
 *(Figure 21: BMS Contact Us Page)*
 
@@ -581,12 +640,16 @@ Contact Us page allows users to send messages or queries to the admin.
 ### Cart Page
 The cart page for users where they can review books added to the cart before making an order.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/cart.png)
+
 *(Figure 22: BMS Cart Page Viewers)*
 
 ---
 
 ### Order Page
 Users can place their orders. Only **Cash On Delivery** payment method is available.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/order.png)
 
 *(Figure 23: BMS Order Page)*
 
@@ -595,12 +658,16 @@ Users can place their orders. Only **Cash On Delivery** payment method is availa
 ### Home Page (Logged In)
 Logged-in users will see a different navigation bar and can log out.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/homepageloggedin.png)
+
 *(Figure 24: BMS Logged In Page)*
 
 ---
 
 ### Book Details (Logged In)
 Logged-in users can view detailed book information and add books to the cart.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/bookdetailsloggedin.png)
 
 *(Figure 25: BMS Users Book Details)*
 
@@ -609,12 +676,16 @@ Logged-in users can view detailed book information and add books to the cart.
 ### Add to Cart (Logged In)
 Logged-in users can add books to their cart and view detailed price information.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/cartloggedin.png)
+
 *(Figure 26: BMS Users Cart Page)*
 
 ---
 
 ### Search Books
 The system allows users to search for books.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/search.png)
 
 *(Figure 27: BMS Search Books)*
 
@@ -623,12 +694,16 @@ The system allows users to search for books.
 ### Admin Login Page
 Login page for the Admin using a new template.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/adminlogin.png)
+
 *(Figure 28: BMS Admin Login Page)*
 
 ---
 
 ### Admin Home Page
 Admin dashboard page using a new template.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/adminhomepage.png)
 
 *(Figure 29: BMS Admin Home Page)*
 
@@ -637,12 +712,16 @@ Admin dashboard page using a new template.
 ### Add Category (Admin)
 Admin can add new book categories.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/add.png)
+
 *(Figure 30: BMS Add New Category)*
 
 ---
 
 ### View Category (Admin)
 Admin can view a list of book categories.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/view.png)
 
 *(Figure 31: BMS View Category)*
 
@@ -651,12 +730,16 @@ Admin can view a list of book categories.
 ### Add Books (Admin)
 Admin can add new books to the system.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/adminadd.png)
+
 *(Figure 32: BMS Add New Books)*
 
 ---
 
 ### View Books (Admin)
 Admin can view the list of available books.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/adminview.png)
 
 *(Figure 33: BMS View Books)*
 
@@ -665,6 +748,8 @@ Admin can view the list of available books.
 ### View Contacted List (Admin)
 Admin can view the list of people who have contacted them through the Contact Us page.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/admincontact.png)
+
 *(Figure 34: BMS Contacted List)*
 
 ---
@@ -672,12 +757,16 @@ Admin can view the list of people who have contacted them through the Contact Us
 ### Users List (Admin)
 Admin can view the list of registered users.
 
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/userlist.png)
+
 *(Figure 35: BMS Users List)*
 
 ---
 
 ### Forget Password
 Forgot password page for users.
+
+![bookstore](https://github.com/KRam0n/tesztek01/blob/main/kepek/forgetpassword.png)
 
 *(Figure 36: BMS Forget Password Page)*
 
@@ -687,6 +776,8 @@ Forgot password page for users.
 
 ### Black Box Testing
 Black-box testing is a method of software testing that examines the functionality of an application without peering into its internal structures or workings. It is also known as specification-based testing. This method can be applied to every level of software testing, including unit, integration, system, and acceptance testing.
+
+![bookstoretest](https://github.com/KRam0n/tesztek01/blob/main/kepek/blackbox.png)
 
 *(Figure 37: Black Box Testing)*
 
@@ -720,6 +811,8 @@ White-box testing involves:
 
 ### Gray Box Testing
 Gray-box testing is performed with limited information about the internal workings of an application. Testers have access to detailed design documents but may not have full visibility of the entire system.
+
+![bookstoretest](https://github.com/KRam0n/tesztek01/blob/main/kepek/graybox.png)
 
 *(Figure 38: Gray Box Testing)*
 
@@ -780,17 +873,22 @@ Gray-box testing is performed with limited information about the internal workin
 
 **User Login**
 
+![bookstoretest](https://github.com/KRam0n/tesztek01/blob/main/kepek/userlogin.png)
+
 *(Figure 39: Test Cases 1)*
 
 ---
 
 **Admin Login**
 
+![bookstoretest](https://github.com/KRam0n/tesztek01/blob/main/kepek/loginadmin.png)
 *(Figure 40: Test Cases 2)*
 
 ---
 
 **Add Book**
+
+![bookstoretest](https://github.com/KRam0n/tesztek01/blob/main/kepek/addbook.png)
 
 *(Figure 41: Test Cases 3)*
 
@@ -798,17 +896,17 @@ Gray-box testing is performed with limited information about the internal workin
 
 **User Registration**
 
+![bookstoretest](https://github.com/KRam0n/tesztek01/blob/main/kepek/registration.png)
+
 *(Figure 42: Test Cases 4)*
 
 ---
 
 ## 4.3 Implementation Approaches
 
-The biggest challenge encountered was time constraints. Implementation takes a significant amount of time and coordination. Scheduling project meetings was difficult, as many group members were unable to devote the necessary focus required during this stage.
+ Far the biggest challenge encountered was time constraints. Implementation takes an extraordinary amount of time and a large amount of coordination. Scheduling project meetings around every group member’s schedule has been nearly impossible. Many of the group members were unable to devote the amount of focus that the implementation stage required. Both the former and the latter problem may be more of an issue in the academic environment where priorities of the different group members are skewed in a variety of directions. Another issue that cropped up was knowledge of the PHP programming. At least two of the four group members were unfamiliar with PHP Swing API, which is php primary user interface package. Again, this may not be as much of an issue in software engineering outside the academic arena.
 
-Another issue was the lack of familiarity with **PHP**. Some group members were new to PHP and had to learn it quickly. This problem is likely to occur in an academic setting, where different group members have varying levels of experience.
-
-The **Responsibility Matrix** tool was invaluable in managing the project. It assigned tasks to specific individuals and held them accountable for their completion. This tool allowed us to track progress and ensured that everyone remained on task.
+One of tools we found very useful, in situations where member responsibilities need to be hashed out, is the responsibility matrix. It has really been the only tool that has allowed us to continue making progress. Everyone is assigned a task, and everyone is held accountable for the completion of their assigned task. It also allows us to track tasks that need to be done. The responsibility matrix has proven to be an invaluable tool in the software engineering process.
 
 ---
 
