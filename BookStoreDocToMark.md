@@ -355,7 +355,7 @@ The **Spiral Model** diagram represents the cyclical nature of the development p
 
 *(Figure 2: Spiral Model)*
 
-![spiral model](https://github.com/KRam0n/tesztek01/tree/main/kepek/sipral.png)
+![spiral model](kepek/sipral.png)
 
 ### Advantages of the Spiral Model:
 - **Risk Management**: The model emphasizes early identification and mitigation of risks through continuous evaluation.
